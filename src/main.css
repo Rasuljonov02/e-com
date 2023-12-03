@@ -63,17 +63,28 @@ h3 {
 .activ {
 	color: black;
 }
-
+.qora,
+.oq {
+	cursor: pointer;
+	background-color: #00000020;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+.qora:hover,
+.oq:hover {
+	color: #ffffff90;
+	background-color: #00000050;
+}
 /* ong */
 .ong {
 	width: 100%;
-	height: 575px;
+	height: 570px;
 	box-sizing: border-box;
 	padding: 20px;
+	overflow-y: scroll;
 	display: grid;
 	grid-template-columns: repeat(3, 300px);
 	gap: 30px;
-	overflow-y: scroll;
 }
 
 .urlImg {
@@ -101,6 +112,58 @@ span {
 .h4 {
 	color: rgb(44, 39, 39);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.vales {
+	appearance: auto;
+	cursor: default;
+	width: 100px;
+}
+
+#selectedPrice {
+	width: 120px;
+}
+
+.ong1 {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 100%;
+	height: 570px;
+	box-sizing: border-box;
+	padding: 20px;
+	overflow-y: scroll;
+}
+.orav {
+	gap: 30px;
+	display: flex;
+	border: 1px solid black;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.img1 {
+	width: 196px;
+	height: 251px;
+}
+.useName {
+		font-family: sans-serif;
+	color: #102a42;
+	font-family: fantasy;
+}
+.summa {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
+	color:#b99179;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.span1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.description {
+		font-family:  BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	min-width: 300px;
+	color: #324d67;
 }
 
 /* loader */
