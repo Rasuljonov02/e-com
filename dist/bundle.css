@@ -116,7 +116,7 @@ span {
 .vales {
 	appearance: auto;
 	cursor: default;
-	width: 100px;
+	width: 130px;
 }
 
 #selectedPrice {
@@ -146,13 +146,14 @@ span {
 	height: 251px;
 }
 .useName {
-		font-family: sans-serif;
+	font-family: sans-serif;
 	color: #102a42;
 	font-family: fantasy;
 }
 .summa {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
-	color:#b99179;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	color: #b99179;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .span1 {
@@ -161,7 +162,8 @@ span {
 	justify-content: space-evenly;
 }
 .description {
-		font-family:  BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
 	min-width: 300px;
 	color: #324d67;
 }

@@ -71,6 +71,7 @@ let a: string[] = ["office", "living room", "kitchen", "bedroom", "dining", "kid
 
 // kategory lar
 function categ(data: any) {
+	som(data);
 	category.forEach((da: any, i) => {
 		da.addEventListener("click", () => {
 			ong.innerHTML = "";
@@ -79,6 +80,7 @@ function categ(data: any) {
 			const selectedCategory = da.textContent.trim().toLowerCase();
 
 			data.forEach((cat: any) => {
+
 				if (cat.category.toLowerCase() === selectedCategory || selectedCategory === "all") {
 					const divelem: HTMLDivElement = document.createElement("div");
 					const img: HTMLImageElement = document.createElement("img");
@@ -115,12 +117,41 @@ function categ(data: any) {
 }
 
 const rangeInput:HTMLInputElement = document.querySelector('.vales')!;
-const selectedPriceElement:HTMLParagraphElement = document.querySelector('#selectedPrice')!;
+const pelement:HTMLParagraphElement = document.querySelector('#selectedPrice')!;
+rangeInput.addEventListener('input', amaki);
+let sega:any;
 
-rangeInput.addEventListener('input', updateSelectedPrice);
+function amaki() {
+		sega = rangeInput.value;
 
-function updateSelectedPrice() {
-		const selectedPrice = rangeInput.value;
-		selectedPriceElement.textContent = `Selected Price:  $${selectedPrice }`;
+		pelement.textContent = `Selected Price:  $${sega }`;
+
+	}
+	console.log(sega);
+
+function som(data: any) {
+	data.forEach((a: { name: any; price: any; image: any; }) => {
+			if (a.price <= sega) {
+					const divelem: HTMLDivElement = document.createElement("div");
+					const img: HTMLImageElement = document.createElement("img");
+					const span: HTMLSpanElement = document.createElement("span");
+					const h4: HTMLParagraphElement = document.createElement("h4");
+					const h44: HTMLParagraphElement = document.createElement("h4");
+
+					h44.className = "h44";
+					h4.innerText = `${a.name}`;
+					h4.className = "h4";
+					h44.innerText = `$${a.price}`;
+					divelem.className = "urlImg";
+					img.src = `${a.image}`;
+					img.className = "img";
+					ong.className = "ong";
+					span.className = "span";
+					ong.appendChild(divelem);
+					divelem.appendChild(img);
+					divelem.appendChild(span);
+					span.appendChild(h4);
+					span.appendChild(h44);
+			}
+	});
 }
-
