@@ -77,14 +77,14 @@ h3 {
 }
 /* ong */
 .ong {
-	width: 100%;
+	width: 80%;
 	height: 570px;
 	box-sizing: border-box;
-	padding: 20px;
+
 	overflow-y: scroll;
 	display: grid;
 	grid-template-columns: repeat(3, 300px);
-	gap: 30px;
+	gap: 20px;
 }
 
 .urlImg {
@@ -167,6 +167,62 @@ span {
 	min-width: 300px;
 	color: #324d67;
 }
+.kattaMalum {
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+}
+.box0 {
+	display: flex;
+	width: 100%;
+	/* gap: 20px; */
+	gap: 30px;
+}
+.karimg {
+	width: 500px;
+	height: 500px;
+}
+.sapn3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.parag {
+	width: 500px;
+	color: #324d67;
+}
+.nazat {
+	color: #fff;
+	padding: 10px 15px;
+	width: 170px;
+	border-radius: 10px;
+	background-color: #453227;
+}
+.brand {
+	color: rgba(10, 76, 138, 0.863);
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.sku {
+	color: rgba(10, 76, 138, 0.863);
+}
+.ism {
+	color: #102a42;
+}
+.avail {
+	color: rgba(10, 76, 138, 0.863);
+}
+.narh {
+	color: #ab7a5f;
+}
+
+
+.conterner5 {
+	display: none;
+}
+
+
+
+
 
 /* loader */
 /* HTML: <div class="loader"></div> */
@@ -198,4 +254,52 @@ span {
 	100% {
 		transform: rotate(0.5turn);
 	}
+}
+
+
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 40px 0;
+	background: #fff;
+	font-family: "Arvo", serif;
+}
+
+.page_404 img {
+	width: 100%;
+}
+
+.four_zero_four_bg {
+	background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+	height: 450px;
+	width: 800px;
+	background-position: center;
+}
+
+.four_zero_four_bg h1 {
+	font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+	font-size: 80px;
+}
+
+.link_404 {
+	color: #fff !important;
+	padding: 10px 20px;
+	background: #39ac31;
+	margin: 20px 0;
+	display: inline-block;
+}
+.contant0_box_404 {
+	margin-top: -50px;
 }
